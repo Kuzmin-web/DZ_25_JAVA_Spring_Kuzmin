@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="wheel" class="ru.kuzmin.spring.Wheel"/>
+    <bean id="starter" class="ru.kuzmin.spring.Starter"/>
+    <bean id="sparkPlug" class="ru.kuzmin.spring.SparkPlug"/>
+    <bean id="acc" class="ru.kuzmin.spring.Accumulator"/>
+    <bean id="hinge" class="ru.kuzmin.spring.Hinge"/>
+    <bean id="diff" class="ru.kuzmin.spring.Differential"/>
+
+    <bean id="engine" class="ru.kuzmin.spring.Engine">
+        <property name="starter" ref="starter"/>
+        <property name="sparkPlug" ref="sparkPlug"/>
+    </bean>
+
+    <bean id="suspension" class="ru.kuzmin.spring.Suspension">
+        <property name="hinge" ref="hinge"/>
+        <property name="differential" ref="diff"/>
+    </bean>
+
+    <bean id="car" class="ru.kuzmin.spring.Car">
+        <property name="wheel" ref="wheel"/>
+        <property name="engine" ref="engine"/>
+        <property name="accumulator" ref="acc"/>
+        <property name="suspension" ref="suspension"/>
+    </bean>
+
+</beans>
