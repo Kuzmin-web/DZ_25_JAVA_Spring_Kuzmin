@@ -1,0 +1,17 @@
+﻿MODE 1 (XML):
+Car Status:
+- Wheel
+- Engine [starter=Starter, sparkPlug=SparkPlug]
+- Accumulator
+- Suspension [hinge=Hinge, differential=Differential]
+Mixed Error: Incompatible class format in file [C:\itproger-java\DZ_25_JAVA\target\classes\ru\kuzmin\spring\Accumulator.class]: set system property 'spring.classformat.ignore' to 'true' if you mean to ignore such files during classpath scanning
+java : ьрЁ. 19, 2026 11:15:51 PM org.springframework.context.support.AbstractApplicationContext refresh
+строка:1 знак:33
++ ... DZ_25_JAVA; java -cp "target\classes;$env:USERPROFILE\.m2\repository\ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ьрЁ. 19, 2026 1...Context refresh:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Incompatible class format in file [C:\itproger-java\DZ_25_JAVA\target\classes\ru\kuzmin\spring\Accumulator.class]: set system property 'spring.classformat.ignore' to 'true' if 
+you mean to ignore such files during classpath scanning
+Java Error: Incompatible class format in file [C:\itproger-java\DZ_25_JAVA\target\classes\ru\kuzmin\spring\Accumulator.class]: set system property 'spring.classformat.ignore' to 'true' if you mean to ignore such files during classpath scanning
