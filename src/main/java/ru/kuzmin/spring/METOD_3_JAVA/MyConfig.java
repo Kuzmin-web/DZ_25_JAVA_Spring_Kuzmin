@@ -1,4 +1,4 @@
-package ru.kuzmin.spring;
+package ru.kuzmin.spring.METOD_3_JAVA;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

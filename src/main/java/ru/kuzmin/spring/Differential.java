@@ -3,7 +3,7 @@ package ru.kuzmin.spring;
 import org.springframework.stereotype.Component;
 
 @Component
-class Differential {
+public class Differential {
     @Override
     public String toString() {
         return "Differential";

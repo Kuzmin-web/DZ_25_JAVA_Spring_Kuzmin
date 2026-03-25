@@ -3,7 +3,7 @@ package ru.kuzmin.spring;
 import org.springframework.stereotype.Component;
 
 @Component
-class Hinge {
+public class Hinge {
     @Override
     public String toString() {
         return "Hinge";

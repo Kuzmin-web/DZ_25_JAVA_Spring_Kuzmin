@@ -3,7 +3,7 @@ package ru.kuzmin.spring;
 import org.springframework.stereotype.Component;
 
 @Component
-class Accumulator {
+public class Accumulator {
     @Override
     public String toString() {
         return "Accumulator";
