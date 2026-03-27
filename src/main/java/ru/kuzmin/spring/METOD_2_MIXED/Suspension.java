@@ -1,4 +1,4 @@
-package ru.kuzmin.spring;
+package ru.kuzmin.spring.METOD_2_MIXED;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

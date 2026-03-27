@@ -9,11 +9,17 @@ package ru.kuzmin.spring.METOD_1_XML;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ru.kuzmin.spring.Car;
+// ВОТ ЭТОТ ИМПОРТ ОБЯЗАТЕЛЕН:
+import ru.kuzmin.spring.METOD_1_XML.Car;
 
 public class Main_1_XML {
     public static void main(String[] args) {
-        ApplicationContext xmlCtx = new ClassPathXmlApplicationContext("xml-config.xml");
-        System.out.println("MODE 1 (XML): " + xmlCtx.getBean(Car.class));
+        try {
+            ApplicationContext xmlCtx = new ClassPathXmlApplicationContext("xml-config.xml");
+            System.out.println("MODE 1 (XML):");
+            System.out.println(xmlCtx.getBean(Car.class));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

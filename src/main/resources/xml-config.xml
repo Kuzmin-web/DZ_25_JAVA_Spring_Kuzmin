@@ -2,29 +2,31 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd">
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="wheel" class="ru.kuzmin.spring.Wheel"/>
-    <bean id="starter" class="ru.kuzmin.spring.Starter"/>
-    <bean id="sparkPlug" class="ru.kuzmin.spring.SparkPlug"/>
-    <bean id="acc" class="ru.kuzmin.spring.Accumulator"/>
-    <bean id="hinge" class="ru.kuzmin.spring.Hinge"/>
-    <bean id="diff" class="ru.kuzmin.spring.Differential"/>
+    <bean id="wheel" class="ru.kuzmin.spring.METOD_1_XML.Wheel"/>
 
-    <bean id="engine" class="ru.kuzmin.spring.Engine">
+    <bean id="accumulator" class="ru.kuzmin.spring.METOD_1_XML.Accumulator"/>
+    <bean id="sparkPlug" class="ru.kuzmin.spring.METOD_1_XML.SparkPlug"/>
+    <bean id="starter" class="ru.kuzmin.spring.METOD_1_XML.Starter"/>
+
+    <bean id="engine" class="ru.kuzmin.spring.METOD_1_XML.Engine">
         <property name="starter" ref="starter"/>
         <property name="sparkPlug" ref="sparkPlug"/>
     </bean>
 
-    <bean id="suspension" class="ru.kuzmin.spring.Suspension">
+    <bean id="hinge" class="ru.kuzmin.spring.METOD_1_XML.Hinge"/>
+    <bean id="differential" class="ru.kuzmin.spring.METOD_1_XML.Differential"/>
+
+    <bean id="suspension" class="ru.kuzmin.spring.METOD_1_XML.Suspension">
         <property name="hinge" ref="hinge"/>
-        <property name="differential" ref="diff"/>
+        <property name="differential" ref="differential"/>
     </bean>
 
-    <bean id="car" class="ru.kuzmin.spring.Car">
+    <bean id="car" class="ru.kuzmin.spring.METOD_1_XML.Car">
         <property name="wheel" ref="wheel"/>
         <property name="engine" ref="engine"/>
-        <property name="accumulator" ref="acc"/>
+        <property name="accumulator" ref="accumulator"/>
         <property name="suspension" ref="suspension"/>
     </bean>
 

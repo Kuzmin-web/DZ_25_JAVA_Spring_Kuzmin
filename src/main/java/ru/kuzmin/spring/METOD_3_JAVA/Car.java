@@ -1,17 +1,9 @@
-package ru.kuzmin.spring;
+package ru.kuzmin.spring.METOD_3_JAVA;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-@Component
 public class Car {
-    @Autowired
     public Wheel wheel;
-    @Autowired
     public Engine engine;
-    @Autowired
     public Accumulator accumulator;
-    @Autowired
     public Suspension suspension;
 
     public void setWheel(Wheel wheel) {
@@ -32,6 +24,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car Status:\n- " + wheel + "\n- " + engine + "\n- " + accumulator + "\n- " + suspension;
+        return "Car Status (Java Config):\n- " + wheel + "\n- " + engine + "\n- " + accumulator + "\n- " + suspension;
     }
 }

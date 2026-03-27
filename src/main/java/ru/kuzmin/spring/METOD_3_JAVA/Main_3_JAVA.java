@@ -9,7 +9,7 @@ package ru.kuzmin.spring.METOD_3_JAVA;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.kuzmin.spring.Car;
+import ru.kuzmin.spring.METOD_3_JAVA.Car;
 
 public class Main_3_JAVA {
     public static void main(String[] args) {

@@ -1,8 +1,5 @@
-package ru.kuzmin.spring;
+package ru.kuzmin.spring.METOD_3_JAVA;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Differential {
     @Override
     public String toString() {
