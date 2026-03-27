@@ -8,7 +8,7 @@
 package ru.kuzmin.spring.METOD_2_MIXED;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.kuzmin.spring.METOD_2_MIXED.Car;
+
 
 public class Main_2_MIXED {
     public static void main(String[] args) {

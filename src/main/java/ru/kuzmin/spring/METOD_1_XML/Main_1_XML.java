@@ -9,8 +9,6 @@ package ru.kuzmin.spring.METOD_1_XML;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-// ВОТ ЭТОТ ИМПОРТ ОБЯЗАТЕЛЕН:
-import ru.kuzmin.spring.METOD_1_XML.Car;
 
 public class Main_1_XML {
     public static void main(String[] args) {
