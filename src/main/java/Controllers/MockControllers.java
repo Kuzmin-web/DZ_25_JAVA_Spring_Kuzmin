@@ -33,20 +33,26 @@ public class MockControllers {
         try {
             String n = String.valueOf(body.get("name"));
             String s = String.valueOf(body.get("surname"));
-            String a = String.valueOf(body.get("age"));
+            Object ageObj = body.get("age");
 
-            if (n.equals("null") || s.equals("null") || a.equals("null")) {
+            if (n.equals("null") || s.equals("null") || ageObj == null) {
                 return error("Поля name, surname и age обязательны");
             }
 
+            int ageVal = Integer.parseInt(String.valueOf(ageObj));
+            String a2 = String.valueOf(ageVal * 2);
 
             String content = Files.readString(Paths.get("src/main/resources/postAnswer.txt"));
+
             String result = content.replace("{name}", n)
                     .replace("{surname}", s)
-                    .replace("{age}", a);
+                    .replace("{age}*2", a2)
+                    .replace("{age}", String.valueOf(ageVal));
 
             return ResponseEntity.ok(result);
-        } catch (Exception e) { return error(e.getMessage()); }
+        } catch (Exception e) {
+            return error(e.getMessage());
+        }
     }
 
     private ResponseEntity<String> error(String msg) {
